@@ -1,9 +1,15 @@
+import numpy as np
 import pandas as pd
 
-data = pd.read_csv("students.csv")
+marks = [85, 90, 78, 88]
+arr = np.array([1, 2, 3, 4, 5])
 
-print(data.head())
-print(data.shape)
-print(data.columns)
-print(data.describe())
-print(data.isnull().sum())
+data = {'Name': ['Ram','Sita','Ravi'], 'Marks':[85,92,78]}
+df = pd.DataFrame(data)
+
+matrix = np.array([[1,2],[3,4]])
+
+print(marks)
+print(arr)
+print(df)
+print(matrix)
