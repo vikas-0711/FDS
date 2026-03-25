@@ -1,15 +1,8 @@
-import numpy as np
-import pandas as pd
+from statistics import mean, median, mode, stdev
 
-marks = [85, 90, 78, 88]
-arr = np.array([1, 2, 3, 4, 5])
+data = [45,50,55,60,65,70,75,80,85,90]
 
-data = {'Name': ['Ram','Sita','Ravi'], 'Marks':[85,92,78]}
-df = pd.DataFrame(data)
-
-matrix = np.array([[1,2],[3,4]])
-
-print(marks)
-print(arr)
-print(df)
-print(matrix)
+print(mean(data))
+print(median(data))
+print(mode(data))
+print(stdev(data))
